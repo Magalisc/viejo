@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="menusup">
+        <a href="index.html"> <img src="imagesa/logoblanco" alt="logo" class="logomenu"> </a>
+        <nav>
+             <ul class="menú">
+                 <li> <a href="index.html">Inicio</a></li>
+                 <li> <a href="Eventos.html">Eventos</a></li>
+                 <li> <a href="Discografía.html">Discografía</a></li>
+                 <li> <a href="Biografía.html">Biografía</a></li>
+                 <li> <a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <div id="contacto">
+        <form action="contacto">
+            <fieldset>
+                <legend class="contact"> Contacto</legend>
+                
+                <div class="formulario">
+                    
+                    <div class="nombre">   
+                     <label for="nombres">Nombre</label>
+                     <input type="text" name="name" placeholder="Ingresa tu nombre">
+                    </div> 
+                
+                    <div class="apellido">
+                     <label for="apellidos">Apellido</label>
+                     <input type="text" name="lastname" placeholder="Ingresa tu apellido">
+                    </div>
+                
+                
+                    <div class="origen">
+                     <label for="Pais"> Pais: </label>
+                      <select name="Country" id="Pais">
+                       <option value="Elegir pais"> Elegí tu país</option>
+                       <option value="Argentina"> Argentina</option>
+                       <option value="Argelia"> Argelia</option>
+                       <option value="Alemania">Alemania</option>
+                      </select>
+                    </div>
+                    
+                    <div class="escribir" >
+                     <label for="cosulta"> Escribí acá</label>
+                     <br>
+                     <textarea name="consulta" id="recuadro" cols="30" rows="5" maxlength="500"></textarea>
+                    </div>
+                  
+                     <div class="news">
+                     <input type="checkbox" name="cbox1"> Quiero recibir Newsletter en mi casilla de correo electrónico.
+                     </div>
+                    
+                    <div class="botones_contacto">
+                     <input type="reset" value="Cancelar">
+                     <input type="submit" value="Enviar">
+                    </div>
+                </div>
+    
+            </fieldset>
+        </form>
+    </div>
+
+
+<footer>
+    <img src="imagesa/logoblanco" alt="logo" class="logofooter">
+    <nav class="menufooter">
+        <ul class="menu footer">
+            <li class="link footer 1"> <a href="index.html">Inicio</a></li>
+            <li class="link footer 2"> <a href="Eventos.html">Eventos</a></li>
+            <li class="link footer 3"> <a href="Discografía.html">Discografía</a></li>
+            <li class="link footer 4"> <a href="Biografía.html">Biografía</a></li>
+            <li class="link footer 5"> <a href="Contacto.html">Contacto</a></li>
+         </ul>  
+     </nav>
+
+<nav class="linkrs">
+ <ul class="links redes">
+    <li class="logo fb">Facebook</li>
+    <li class="logo ig">Instagram</li>
+    <li class="logo sp">Spotify</li>
+ </ul>
+</nav>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,337 @@
+* {
+    padding: 4px;
+    margin: 2px;
+  }
+
+  @font-face {
+    font-family: 'Druk';
+    src: url(../fonts/Druk\ Wide\ Bold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Aristotelica';
+    src: url(../fonts/Aristotelica\ Display\ ExtraLight\ Trial.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Aristotelica2';
+    src: url(../fonts/Aristotelica\ Display\ DemiBold\ Trial.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EROTIQUE';
+    src: url(../fonts/ErotiqueTrial-Regular.ttf) format('truetype');
+  }
+
+
+  /* ---------HEADER-------- */
+  
+  .menusup{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: right;
+  }
+
+  .menú{
+    font-family: 'Aristotelica2';
+  }
+
+  .logomenu{
+  width: 140px;
+  height: 30px;
+  margin-right: 650px;
+  margin-top: 15px; 
+  }
+
+  nav{
+    height: 60px;
+    background-color:transparent;
+  }
+
+  nav ul{
+     list-style: none;
+     display: inline-block;
+     padding:10px;
+  }
+
+  nav ul li{
+      float: left;
+  }
+
+  nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      transition: height 2s;
+  }
+  
+  nav ul li a:hover {
+  color: rgb(238, 82, 25);
+  }
+
+
+
+/*  ---------BODY-------- */
+
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white ;
+    background-image: url(../images/indexf_Mesa\ de\ trabajo\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center ;
+    
+  }
+
+h2{
+  font-family: 'Druk' ;
+  text-align: left;
+}  
+
+  /*  ---------INICIO-------- */
+
+ .pantalla1{
+   padding: 200px;
+   background-image: url(../images/fp1.jpg);
+   background-size: 70%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-position-y: 16rem;
+   height: 200px;
+  }
+
+
+  .iniciotexto{ 
+    text-align: center;
+    font-family: 'Druk';
+    font-size: 80px;
+    letter-spacing: 0.1cm;
+    color: rgb(98, 17, 249);
+    margin-top: -3rem;
+  }
+   
+  h1 {
+    animation-duration: 7s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  
+
+.promof{
+  padding: 100px;
+  text-align: center;
+}
+
+.fechas{
+  font-family: 'EROTIQUE';
+  font-size: 50px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.ver{
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 130px;
+  height: 55px;
+  border-radius: 20px;
+  background-color: rgb(216, 163, 254);
+}
+
+
+
+/*  ---------EVENTOS-------- */
+
+  #evento{
+  color: rgb(191, 97, 253);
+  font-size: 30px;
+  }
+
+  #eventos {
+    padding: 100px;
+    margin-top: -50px;
+  }
+
+ table, tr {
+   margin: auto;
+   padding: 1.5rem;
+   width: 70rem;
+   height: 2rem;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   background-image: url(../images/tablafechas_Mesa\ de\ trabajo\ 1.png);
+   border-style:none;
+   border-radius: 20px;
+  }
+
+  th {
+    margin: auto;
+    padding: 1.5rem;
+    width: 50rem;
+    height: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: none;
+  }
+
+  .entradas {
+    display: block;
+    margin: auto;
+    padding: 10px;
+  font-family: "lato",sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(184, 184, 184);
+  }
+
+
+/*  ---------DISCOGRAFÍA-------- */
+
+  .discografía{
+    color: rgb(191, 97, 253);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 6rem;
+  }
+  
+  #discos{
+  margin-bottom: -300px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 800px 400px;
+  grid-template-areas: "rep1" "rep2" "rep3" "rep4";
+  grid-template-rows: 80px 80px;
+  grid-column-gap: 20px;
+  grid-row-gap: 340px;
+  justify-content: center;
+}
+
+.rep1 {
+    grid-row: 1; 
+    grid-column: 1;
+  }
+
+.rep2 {
+  grid-row: 2; 
+  grid-column: 1;
+}
+
+.rep3 {
+  grid-row: 1; 
+  grid-column: 2;
+}
+
+.rep4 {
+  grid-row: 2; 
+  grid-column: 2;
+}
+
+
+
+/*  ---------BIOGRAFÍA-------- */
+
+.biografia {  
+ padding: 120px;
+ display: flex;
+ flex-direction: row;
+ align-content:space-between;
+}
+
+.biog{
+  color: rgb(191, 97, 253);
+  font-size: 30px;
+  margin-left: 120px;
+  margin-top: 50px;
+  margin-bottom: -80px;
+}
+
+.bio{
+  text-align: left;
+  text-justify: newspaper;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 450px;
+  margin-left: 40px;
+}
+
+img {
+  height: 50%;
+  width: 50%;
+}
+
+
+
+/* ---------CONTACTO-------- */
+
+.nombre, .apellido, .origen, .escribir, .news, .botones {
+  margin: 20px;
+
+}
+
+.contact{
+  color: rgb(191, 97, 253);
+  font-size: 30px;
+  font-family: 'Druk';
+  font-weight: bold;
+}
+
+#contacto {
+  padding: 60px;
+  margin:20px;
+  width:auto;
+  }
+
+.botones_contacto{
+  font-family: 'lato', sans-serif;
+  padding: 20px;
+  border: none;
+}
+
+.botones_contacto :hover{
+  background-color: rgb(197, 130, 238);
+}
+
+.formulario {
+  font-family: 'lato', sans-serif;
+  color: white;
+}
+
+
+/* ---------FOOTER-------- */
+
+footer {
+    font-family: 'Aristotelica';
+    color: rgb(88, 88, 88);
+    padding: 50px;
+    margin-bottom: -10rem;
+  }
+
+.logofooter{
+  width: 150px;
+  height: 30px;
+  margin-left:585px;
+}
+
+.menufooter{
+ text-align: center;
+}
+
+.linkrs {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(119, 118, 118);
+  }
+
+    
