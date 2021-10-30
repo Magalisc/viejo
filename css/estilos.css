@@ -24,93 +24,92 @@
 
   /* ---------HEADER-------- */
   
-  .menusup{
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: right;
-  }
-
-  .menú{
-    font-family: 'Aristotelica2';
-  }
 
   .logomenu{
-  width: 140px;
-  height: 30px;
-  margin-right: 650px;
-  margin-top: 15px; 
+    width: 11rem;
+    height: 2.3rem;
+    margin-right:35rem;
   }
 
-  nav{
-    height: 60px;
-    background-color:transparent;
-  }
+  @media (max-width:700px) {
+    .logomenu{
+      width:8rem;
+      height: 2rem;
+      margin-right: 0rem;
+    }
+} 
 
-  nav ul{
-     list-style: none;
-     display: inline-block;
-     padding:10px;
-  }
+@media (max-width:900px) and (min-width:700px){
+  .logomenu{
+    width:8rem;
+    height: 2rem;
+    margin-right:0rem;
 
-  nav ul li{
-      float: left;
   }
+} 
 
   nav ul li a {
       color: white;
+      font-family: 'Aristotelica2' ;
       font-weight: bold;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.3rem;
       transition: height 2s;
   }
   
-  nav ul li a:hover {
+ #navbarNav a:hover {
   color: rgb(238, 82, 25);
   }
 
+  @media (min-width:1300px){
+    #navbarNav{
+      margin-right: 20rem;
+  
+    }
+  } 
 
 
 /*  ---------BODY-------- */
 
-  body {
-    font-family:Arial, Helvetica, sans-serif;
-    color: white ;
-    background-image: url(../images/indexf_Mesa\ de\ trabajo\ 1.jpg);
-    background-repeat: no-repeat;
-    background-size: 105%;
-    background-position: center ;
-    
-  }
+
+.html,body{
+  height:100vh;
+}
+
+body {
+  background-image: url(/imagesa/indexf_Mesa\ de\ trabajo\ 1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  text-align: center;
+  font-family: 'Arial', Helvetica, sans-serif;
+  color: white ;
+}
 
 h2{
   font-family: 'Druk' ;
   text-align: left;
 }  
 
+
+
   /*  ---------INICIO-------- */
 
- .pantalla1{
-   padding: 200px;
-   background-image: url(../images/fp1.jpg);
-   background-size: 70%;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-position-y: 16rem;
-   height: 200px;
-  }
-
-
-  .iniciotexto{ 
-    text-align: center;
+.iniciotexto{
     font-family: 'Druk';
-    font-size: 80px;
-    letter-spacing: 0.1cm;
+    font-size: 5rem;
     color: rgb(98, 17, 249);
-    margin-top: -3rem;
+    margin-top: 8rem;
   }
-   
+
+  @media (max-width:700px) {
+    .iniciotexto{
+       font-size: 2.5rem;
+    }
+}
+  
   h1 {
     animation-duration: 7s;
     animation-name: aparecer;
@@ -125,7 +124,11 @@ h2{
       opacity: 1;
     }
  }
-  
+
+ .pantalla1 img {
+   width: 90%;
+ }  
+
 
 .promof{
   padding: 100px;
@@ -134,21 +137,76 @@ h2{
 
 .fechas{
   font-family: 'EROTIQUE';
-  font-size: 50px;
-  margin-top: 150px;
+  color: white;
+  font-size: 3rem;
+  margin-top: 6rem;
   text-align: center;
 }
 
-.ver{
-  margin-top: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  width: 130px;
-  height: 55px;
-  border-radius: 20px;
-  background-color: rgb(216, 163, 254);
+@media (max-width:700px) {
+  .fechas{
+     font-size: 1.5rem;
+     margin-top: 0rem;
+  }
 }
 
+#cards {
+  width: 70rem;
+  margin: 0 auto; 
+  float: none;
+  margin-bottom: 1rem;
+  padding-top: 10rem;
+}
+
+#card_1 {
+  background-color:rgb(255, 110, 27);
+  font-family: 'Druk'; 
+}
+
+#card_1:hover, #card_2:hover, #card_3:hover{ 
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .9s ease;
+}
+
+#card_2 {
+  background-color:rgb(202, 27, 255);
+  font-family: 'Druk'; 
+}
+
+#card_3 {
+  background-color:rgb(114, 27, 255);
+  font-family: 'Druk';
+}
+
+#card_3 a, #card_2 a, #card_1 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width:700px) {
+  #cards {
+    width: 20rem
+ }
+} 
+
+
+
+#boton_inicio_contacto {
+  background-color: rgb(191, 97, 253);
+  color: white;
+}
+
+.btn{
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .9s ease;
+
+}
 
 
 /*  ---------EVENTOS-------- */
@@ -156,44 +214,33 @@ h2{
   #evento{
   color: rgb(191, 97, 253);
   font-size: 30px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Druk', sans-serif;
   }
 
-  #eventos {
-    padding: 100px;
-    margin-top: -50px;
+  #eventos_tabla {
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-family: 'lato';
+    font-size: 1rem;
+    color: white;
+
   }
 
- table, tr {
-   margin: auto;
-   padding: 1.5rem;
-   width: 70rem;
-   height: 2rem;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   background-image: url(../images/tablafechas_Mesa\ de\ trabajo\ 1.png);
-   border-style:none;
-   border-radius: 20px;
-  }
+  @media (max-width:700px) {
+     #eventos_tabla {
+     font-size: 0.9rem;
+    }
 
-  th {
-    margin: auto;
-    padding: 1.5rem;
-    width: 50rem;
-    height: 2rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-style: none;
-  }
+    #carouselExampleIndicators {
+      margin-bottom: 6rem;
+    }
+} 
 
-  .entradas {
-    display: block;
-    margin: auto;
-    padding: 10px;
-  font-family: "lato",sans-serif;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgb(184, 184, 184);
-  }
+#carouselExampleIndicators {
+  margin-top: 6rem;
+}
 
 
 /*  ---------DISCOGRAFÍA-------- */
@@ -201,12 +248,19 @@ h2{
   .discografía{
     color: rgb(191, 97, 253);
     font-size: 30px;
-    margin-top: 50px;
-    margin-left: 6rem;
+    font-family: 'Druk', sans-serif;
+    margin-left: -3rem;
+    margin-top: 2rem;
   }
   
+  @media (max-width:700px) {
+    .discografía {
+      margin-left: 0rem;
+   }
+} 
+
   #discos{
-  margin-bottom: -300px;
+  margin-bottom: -190px;
   margin-top: 50px;
   display: grid;
   grid-template-columns: 800px 400px;
@@ -216,6 +270,19 @@ h2{
   grid-row-gap: 340px;
   justify-content: center;
 }
+
+
+@media (max-width:700px) {
+  #discos {
+    grid-template-columns: 200px 200px;
+    grid-template-areas: "rep1" "rep2" "rep3" "rep4";
+    grid-template-rows: 80px 80px;
+    grid-column-gap: 20px;
+    grid-row-gap: 340px;
+ }
+} 
+
+
 
 .rep1 {
     grid-row: 1; 
@@ -242,7 +309,6 @@ h2{
 /*  ---------BIOGRAFÍA-------- */
 
 .biografia {  
- padding: 120px;
  display: flex;
  flex-direction: row;
  align-content:space-between;
@@ -250,88 +316,103 @@ h2{
 
 .biog{
   color: rgb(191, 97, 253);
-  font-size: 30px;
-  margin-left: 120px;
+  font-family: 'Druk';
+  font-size: 2rem;
   margin-top: 50px;
-  margin-bottom: -80px;
+  margin-bottom: 2rem;
 }
 
 .bio{
   text-align: left;
   text-justify: newspaper;
+  color: white;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  margin-top: 10px;
-  width: 450px;
-  margin-left: 40px;
+  font-size: 0.89rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 img {
-  height: 50%;
-  width: 50%;
+  height: 60%;
+  width: 60%;
 }
 
+@media (max-width:700px) {
+
+  img {
+    height: 100%;
+    width: 100%;
+ }
+
+ .bio{
+  margin-left: 0rem;
+ }
+
+ .biografia {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+ }
+} 
 
 
 /* ---------CONTACTO-------- */
 
-.nombre, .apellido, .origen, .escribir, .news, .botones {
-  margin: 20px;
-
-}
 
 .contact{
   color: rgb(191, 97, 253);
-  font-size: 30px;
+  font-size: 2rem;
   font-family: 'Druk';
   font-weight: bold;
-}
-
-#contacto {
-  padding: 60px;
-  margin:20px;
-  width:auto;
-  }
-
-.botones_contacto{
-  font-family: 'lato', sans-serif;
-  padding: 20px;
-  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .botones_contacto :hover{
   background-color: rgb(197, 130, 238);
 }
 
-.formulario {
-  font-family: 'lato', sans-serif;
-  color: white;
+#botones {
+ padding-bottom: 4rem;
 }
-
 
 /* ---------FOOTER-------- */
 
-footer {
-    font-family: 'Aristotelica';
-    color: rgb(88, 88, 88);
-    padding: 50px;
-    margin-bottom: -10rem;
-  }
-
-.logofooter{
-  width: 150px;
-  height: 30px;
-  margin-left:585px;
+#logo_footer{
+  width: 8rem;
+  height: 2rem;
 }
 
-.menufooter{
+.menu_footer ul li { 
+ display: inline; 
  text-align: center;
+ font-family: 'Aristotelica';
+ color: white;
+
 }
 
-.linkrs {
-    text-align: center;
-    font-size: 12px;
-    color: rgb(119, 118, 118);
+.menu_footer a:hover {
+  color: rgb(238, 82, 25);
   }
 
-    
+.menu_footer {
+  padding-left: 30rem;
+  padding-top: 1rem;
+}
+
+.menu_footer a{
+ text-decoration: none;
+ color: white;
+}
+
+footer {
+  padding-bottom: 3rem;
+} 
+
+@media (max-width:700px) {
+  .menu_footer {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+ }

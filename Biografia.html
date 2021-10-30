@@ -1,63 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-
-<body>
-
-
-    <header class="menusup">
-        <a href="index.html"> <img src="imagesa/logoblanco" alt="logo" class="logomenu"> </a>
-        <nav>
-             <ul class="menú">
-                 <li> <a href="index.html">Inicio</a></li>
-                 <li> <a href="Eventos.html">Eventos</a></li>
-                 <li> <a href="Discografía.html">Discografía</a></li>
-                 <li> <a href="Biografía.html">Biografía</a></li>
-                 <li> <a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>  
-
-    <div id="biografía">
-        <h2 class="biog">Biografía</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto - Castiglio</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./BTP/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+    
+        <header>
+            <nav class="navbar navbar-expand-md bg-transparent navbar-dark text-right">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagesa/logoblanco" alt="logo" class="logomenu">
+                </a>
         
-        <div class="biografia">
-        <img class="biopic" src="imagesa/biopic.jpeg" alt="biopic">
+                <button id="botonmenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Discografia.html">Discografía</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Biografia.html">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              </header>
 
-        <p class="bio">Somos Shala y Schweizer nos conocimos en 2008 y al año siguiente nos unimos para formar Adriatique, nombre inspirado en el nombre de pila de ambos. Desde entonces somos amigos, compañeros de piso y socios a tiempo completo .​<br>
+    <div class="container">
+        <h2 class="biog">Biografía</h2>
+        <div class="biografia">
+            <img class="biopic" src="./imagesa/biopic.jpeg" alt="biopic">
+                
+            <p class="bio">Somos Shala y Schweizer nos conocimos en 2008 y al año siguiente nos unimos para formar Adriatique, nombre inspirado en el nombre de pila de ambos. Desde entonces somos amigos, compañeros de piso y socios a tiempo completo .​<br>
               Unidos por nuestro gusto musical electrónico, hemos desarrollado un estilo musical que hace hincapié en melodías profundas y ritmos minimalistas y repetitivos; Nuestro credo es que «la música debería ser meditación». <br>
               Organizamos fiestas en Zúrich llamadas Moving Around Us, que incluyen instalaciones artísticas y DJ sets. Hemos formado parte del line-up de Awakenings Festival, BPM Festival, Caprices Festival, DGTL, Tomorrowland (ediciones 2016, 2017, 2018, 2019) y
              Ultra Music Festival entre otros.​ En 2015 pinchamos en una sesión de Boiler Room en Tulum, México.​ A principios de 2019 pinchamos para Cercle desde la cima del Alpe d'Huez, en los Alpes franceses, evento cuya retransmisión cuenta con 10m de visualizaciones.</p>
         </div>
     </div>
 
+
+   <!--Inicio footer-->
+
 <footer>
-    <img src="imagesa/logoblanco" alt="logo" class="logofooter">
-    <nav class="menufooter">
-        <ul class="menu footer">
-            <li class="link footer 1"> <a href="index.html">Inicio</a></li>
-            <li class="link footer 2"> <a href="Eventos.html">Eventos</a></li>
-            <li class="link footer 3"> <a href="Discografía.html">Discografía</a></li>
-            <li class="link footer 4"> <a href="Biografía.html">Biografía</a></li>
-            <li class="link footer 5"> <a href="Contacto.html">Contacto</a></li>
-         </ul>  
-     </nav>
+    
+    <div class="container text-center">
+        <img src="./imagesa/logoblanco" alt="logo" class="mx-auto d-block" id="logo_footer">
+    </div>   
 
-<nav class="linkrs">
- <ul class="links redes">
-    <li class="logo fb">Facebook</li>
-    <li class="logo ig">Instagram</li>
-    <li class="logo sp">Spotify</li>
- </ul>
-</nav>
+    <div class="menu_footer">
+    <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./Eventos.html">Eventos</a></li>
+        <li><a href="./Discografia.html">Discografía</a></li>
+        <li><a href="./Biografia.html">Biografía</a></li>
+        <li><a href="./Contacto.html">Contacto</a></li>
+    </ul>   
+    </div> 
 
+        
 </footer>
 
+<!--Fin footer-->
+
+
+<!--links funcionamiento js y bootstrap-->
+
+<script src="js/wow.min.js"></script>
+<script>  new WOW().init(); </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    
+<script src="./js/bootstrap.min.js"></script> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--fin links funcionamiento js y bootstrap-->
 </body>
+
 </html>
