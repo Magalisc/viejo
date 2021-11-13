@@ -1,0 +1,420 @@
+
+
+ * {
+    padding: 4px;
+    margin: 2px;
+  }
+
+  $title-font:'Druk', sans-serif;
+  $color-title-font:rgb(191, 97, 253);
+
+  @import "footer";
+
+
+
+  @font-face {
+    font-family: 'Druk';
+    src: url("../fonts/Druk\ Wide\ Bold.ttf") format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Aristotelica';
+    src: url("../fonts/Aristotelica\ Display\ ExtraLight\ Trial.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: 'Aristotelica2';
+    src: url("../fonts/Aristotelica\ Display\ DemiBold\ Trial.ttf") format('truetype');
+  }
+  @font-face {
+    font-family: 'EROTIQUE';
+    src: url("../fonts/ErotiqueTrial-Regular.ttf") format('truetype');
+  }
+
+  /* ---------HEADER-------- */
+  
+
+  .logomenu{
+    width: 11rem;
+    height: 2.3rem;
+    margin-left: 2rem;
+  }
+
+  @media (max-width:700px) {
+    .logomenu{
+      width:8rem;
+      height: 2rem;
+      margin-left: -1rem;
+    }
+} 
+
+@media (max-width:900px) and (min-width:700px){
+  .logomenu{
+    width:8rem;
+    height: 2rem;
+
+  }
+} 
+
+  nav ul li a {
+      color: white;
+      font-family: 'Aristotelica2' ;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: height 2s;
+  }
+  
+ #navbarNavAltMarkup a:hover {
+  color: rgb(238, 82, 25);
+  }
+
+
+
+
+/*  ---------BODY-------- */
+
+
+.html,body{
+  height:100vh;
+}
+
+body {
+  background-image: url("../imagesa/indexf_Mesa\ de\ trabajo\ 1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  text-align: center;
+  font-family: 'Arial', Helvetica, sans-serif;
+  color: white ;
+}
+
+h2{
+  font-family: $title-font;
+  color: $color-title-font;
+  text-align: left;
+}  
+
+
+
+  /*  ---------INICIO-------- */
+
+.iniciotexto{
+    font-family: 'Druk';
+    font-size: 5rem;
+    color: rgb(98, 17, 249);
+    margin-top: 8rem;
+  }
+
+  @media (max-width:700px) {
+    .iniciotexto{
+       font-size: 2.5rem;
+       margin-top: 2em;
+    }
+
+    #imagen_inicio {
+      height: 15em ;
+      width: 55em;
+    }
+}
+  
+  h1 {
+    animation-duration: 7s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ .pantalla1 img {
+   width: 90%;
+ }  
+
+
+.promof{
+  padding: 100px;
+  text-align: center;
+}
+
+
+.fechas{
+  font-family: 'EROTIQUE';
+  color: white;
+  font-size: 3rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+@media (max-width:680px) {
+  .fechas{
+     font-size: 2.5rem;
+     margin-top: 3rem;
+  }
+
+  .boton_contactanos {
+
+    margin-bottom: 4rem;
+  }
+
+}
+
+#cards {
+  margin-bottom: 1rem;
+  padding-top: 10rem;
+  margin-left: 2rem;
+}
+
+#card_1 {
+  background-color:rgb(255, 110, 27);
+  font-family: 'Druk'; 
+}
+
+#card_1:hover, #card_2:hover, #card_3:hover{ 
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .9s ease;
+}
+
+#card_2 {
+  background-color:rgb(202, 27, 255);
+  font-family: 'Druk'; 
+}
+
+#card_3 {
+  background-color:rgb(114, 27, 255);
+  font-family: 'Druk';
+}
+
+#card_3 a, #card_2 a, #card_1 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width:700px) {
+  #cards img {
+    height: 20rem;
+    width: 20rem;
+    margin-top: 2em;
+ }
+
+ #cards {
+   margin:auto;
+ }
+
+} 
+
+
+
+#boton_inicio_contacto {
+  background-color: rgb(191, 97, 253);
+  color: white;
+  margin-top: -10rem;
+}
+
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .9s ease;
+
+}
+
+
+/*  ---------EVENTOS-------- */
+
+  #evento{
+  
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  }
+
+  #eventos_tabla {
+    margin-top: 2rem;
+    border-radius: 20px;
+    font-family: 'lato';
+    font-size: 1rem;
+    color: white;
+  }
+
+  @media (max-width:700px) {
+     #eventos_tabla {
+     font-size: 0.7rem;
+     margin-bottom: -4rem;
+    }
+
+    #carouselExampleIndicators {
+      margin-bottom: 4em;
+    }
+} 
+
+#carouselExampleIndicators {
+  margin-top: 6rem;
+ 
+}
+
+.carousel-item img {
+  height: 30em;
+}
+
+
+/*  ---------DISCOGRAFÍA-------- */
+
+  .discografía{
+    margin-top: 2rem;
+  }
+  
+  @media (max-width:700px) {
+    .discografía {
+      margin-left: 0rem;
+   }
+} 
+
+  #discos{
+  margin-bottom: -190px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 800px 400px;
+  grid-template-areas: "rep1" "rep2" "rep3" "rep4";
+  grid-template-rows: 80px 80px;
+  grid-column-gap: 20px;
+  grid-row-gap: 340px;
+  justify-content: center;
+}
+
+
+@media (max-width:700px) {
+  #discos {
+    grid-template-columns: 200px 200px;
+    grid-template-areas: "rep1" "rep2" "rep3" "rep4";
+    grid-template-rows: 80px 80px;
+    grid-column-gap: 20px;
+    grid-row-gap: 340px;
+ }
+} 
+
+@media (min-width:700px) and (max-width:1200px) {
+  #discos {
+    grid-template-columns: 300px 300px;
+    grid-template-areas: "rep1" "rep2" "rep3" "rep4";
+    grid-template-rows: 100px 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 340px;
+ }
+} 
+
+
+
+.rep1 {
+    grid-row: 1; 
+    grid-column: 1;
+  }
+
+.rep2 {
+  grid-row: 2; 
+  grid-column: 1;
+}
+
+.rep3 {
+  grid-row: 1; 
+  grid-column: 2;
+}
+
+.rep4 {
+  grid-row: 2; 
+  grid-column: 2;
+}
+
+
+
+/*  ---------BIOGRAFÍA-------- */
+
+
+.biog{
+  margin-top: 50px;
+  margin-bottom: 2rem;
+}
+
+.bio{
+  text-align: left;
+  text-justify: newspaper;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.89rem;
+  margin-top: 1.5rem;
+}
+
+#biografia img {
+  height: 95%;
+  width: 95%;
+}
+
+#biogra {
+  margin-bottom: 3rem;
+}
+
+@media (max-width:700px) {
+
+  img {
+    height: 100%;
+    width: 100%;
+ }
+
+ .bio{
+  margin-left: 0rem;
+  font-size: 0.9em;
+ }
+
+ .biografia {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+ }
+} 
+
+
+/* ---------CONTACTO-------- */
+
+
+.contact{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.botones_contacto :hover{
+  background-color: rgb(197, 130, 238);
+}
+
+#botones {
+ padding-bottom: 4rem;
+}
+
+#contacto {
+  text-align: left;
+}
+
+.formulario {
+  background-color: rgb(201, 179, 255);
+  border-radius: 2em;
+  padding: 2em;
+  margin-bottom: 4em;
+}
+
+#botón_1{
+  background-color: rgb(112, 80, 255);
+  border-style: none;
+}
+
+#botón_2{
+  border-color: rgb(112, 80, 255);
+  color:rgb(112, 80, 255);
+}
+

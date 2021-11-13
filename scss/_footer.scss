@@ -1,0 +1,35 @@
+/* ---------FOOTER-------- */
+
+#logo_footer{
+    width: 8rem;
+    height: 2rem;
+  }
+  
+  .menu_footer ul li { 
+   display: inline; 
+   text-align: center;
+   font-family: 'Aristotelica';
+   color: white;
+  
+  }
+  
+  .menu_footer a:hover {
+    color: rgb(238, 82, 25);
+    }
+  
+  
+  .menu_footer a{
+   text-decoration: none;
+   color: white;
+  }
+  
+  footer {
+    padding-bottom: 3rem;
+  } 
+  
+  @media (max-width:700px) {
+    .menu_footer {
+      margin-left: -2em;
+      font-size: 0.9rem;
+    }
+   }
